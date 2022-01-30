@@ -1,0 +1,16 @@
+.p-top-overview__card {
+  margin-top: rem(42);
+
+  @include mq() {
+    margin-top: rem(37);
+  }
+}
+
+.p-top-overview__title-wrap {
+  @include mq() {
+    position: absolute;
+    top: rem(-31);
+    left: 7%;
+    z-index: -1;
+  }
+}

@@ -1,0 +1,70 @@
+.c-btn-pageTop {
+  position: fixed;
+  right: rem(20);
+  bottom: rem(41);
+  width: rem(45);
+  height: rem(45);
+  background-color: #ffffff;
+  transition: background-color 0.3s;
+
+  @include mq() {
+    right: rem(31);
+    bottom: rem(33);
+  }
+}
+
+.c-btn-pageTop:hover {
+  background-color: #333333;
+}
+
+.c-btn-pageTop:before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: rem(20);
+  height: rem(20);
+  transform: translateX(-50%) translateY(-16%) rotate(-45deg);
+  border: 2px solid #333333;
+  border-radius: 2px;
+  transition: border-color 0.3s;
+  content: "";
+
+  border-color: #333333 #333333 transparent transparent;
+}
+
+.c-btn-pageTop:hover:before {
+  border-color: #ffffff #ffffff transparent transparent;
+}
+
+#pageTop {
+  transform: translateY(100px);
+  opacity: 0;
+}
+
+#pageTop.UpMove {
+  animation: UpAnime 0.5s forwards;
+}
+@keyframes UpAnime {
+  from {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+#pageTop.DownMove {
+  animation: DownAnime 0.5s forwards;
+}
+@keyframes DownAnime {
+  from {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(100px);
+    opacity: 1;
+  }
+}

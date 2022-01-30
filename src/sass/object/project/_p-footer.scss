@@ -1,0 +1,34 @@
+.p-footer {
+  padding: rem(51) rem(0) rem(50);
+  background-color: #111111;
+  text-align: center;
+
+  @include mq(tab) {
+    padding: rem(30) rem(32) rem(30) rem(32);
+  }
+}
+
+.p-footer__wrapper {
+  @include mq() {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: rem(75);
+  }
+}
+
+.p-footer__wrapper img {
+  @include mq(tab) {
+    height: rem(27);
+  }
+}
+
+.p-footer__items {
+  margin-top: rem(8);
+  margin-bottom: rem(26);
+
+  @include mq(tab) {
+    display: flex;
+    margin-bottom: rem(0);
+  }
+}

@@ -1,0 +1,123 @@
+.p-top-work {
+  background: $Sub-color;
+
+  @include mq() {
+    padding: rem(81) rem(46) rem(77) rem(90);
+    background: linear-gradient(
+    90deg,
+    #111111 0%,
+    #111111 30%,
+    #333333 30%,
+    #333333 100%
+    );
+  }
+}
+.p-top-workRev {
+  padding: rem(80) rem(90);
+  background: linear-gradient(
+  90deg,
+  #333333 0%,
+  #333333 70%,
+  #000000 70%,
+  #000000 100%
+  );
+}
+
+.p-top-work__wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  @include mq() {
+    flex-direction: row;
+  }
+  flex-direction: column;
+}
+.reverse {
+  flex-direction: row-reverse;
+}
+
+.p-top-work__pagination {
+  bottom: rem(-21) !important;
+  left: rem(-2) !important;
+
+  @include mq() {
+    bottom: rem(-31) !important;
+    left: rem(-20) !important;
+  }
+}
+
+.p-top-work__pagination > .swiper-pagination-bullet {
+  margin-right: rem(5.5) !important;
+  margin-left: rem(5.5) !important;
+  background: $Gray;
+}
+
+.p-top-work__pagination > .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: $Yellow;
+}
+
+.p-top-work__inner {
+  position: relative;
+}
+
+.p-top-work__body {
+  padding: rem(20);
+  padding-top: rem(23);
+
+  @include mq(tab) {
+    width: 229%;
+    padding-top: 0;
+    padding-right: rem(47);
+    padding-left: rem(32);
+  }
+}
+
+.p-top-work__body-title {
+  letter-spacing: rem(2);
+  color: #ffffff;
+  font-size: rem(20);
+  text-align: center;
+
+  @include mq(tab) {
+    letter-spacing: 0.02em;
+    margin-top: rem(8);
+    font-size: rem(25);
+    text-align: left;
+  }
+}
+
+.p-top-work__body-text {
+  line-height: 1.43;
+  letter-spacing: 0.12em;
+  margin-top: rem(21);
+  color: #ffffff;
+  font-size: rem(16);
+
+  @include mq(tab) {
+    line-height: 2.1875;
+    letter-spacing: 0.03125em;
+    margin-top: rem(35);
+  }
+}
+
+.p-top-work__btn {
+  margin-top: rem(27);
+  margin-right: rem(1);
+  text-align: center;
+
+  @include mq(tab) {
+    margin-top: rem(48);
+    text-align: left;
+  }
+}
+
+.p-top-work__btn > .c-btn {
+  padding-top: rem(8);
+  padding-bottom: rem(8);
+
+  @include mq() {
+    padding-top: rem(15);
+    padding-bottom: rem(17);
+  }
+}

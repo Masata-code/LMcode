@@ -1,0 +1,30 @@
+.p-news {
+  background-color: #111111;
+}
+
+.p-news__wrap {
+  width: 95%;
+  max-width: rem(335);
+  padding: rem(76) 0 rem(120) 0;
+  margin: 0 auto;
+
+  @include mq(tab) {
+    width: 90%;
+    max-width: rem(865);
+    padding: rem(58) 0 rem(150) 0;
+    margin: 0 auto;
+  }
+}
+.p-news__item {
+  margin-bottom: rem(33);
+
+  @include mq(tab) {
+    margin-bottom: rem(30);
+  }
+}
+
+.p-news__article {
+  @include mq() {
+    display: flex;
+  }
+}

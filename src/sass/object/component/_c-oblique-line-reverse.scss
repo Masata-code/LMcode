@@ -1,0 +1,11 @@
+.c-oblique-line-reverse::before {
+  width: 100%;
+  height: 2px;
+  transform: skewY(105deg);
+  background-color: $Yellow;
+  content: "";
+
+  @include mq() {
+    transform: skewY(135deg);
+  }
+}

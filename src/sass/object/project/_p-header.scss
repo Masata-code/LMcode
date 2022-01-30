@@ -1,0 +1,25 @@
+.p-header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: rem(50);
+  padding: rem(8) 0 0 rem(22);
+  background: #111111;
+  opacity: 0.7;
+  transition: all 0.4s;
+
+  @include mq() {
+    height: rem(53);
+    padding: 0 0 0 rem(33);
+    margin-top: rem(-2);
+  }
+}
+
+.p-header.is-open {
+  opacity: 1;
+}

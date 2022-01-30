@@ -1,0 +1,41 @@
+.p-section-title {
+  position: relative;
+
+  @include mq(tab) {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    width: 100%;
+  }
+}
+
+.p-section-title__logo {
+  width: 100%;
+  line-height: 1;
+  color: #706f4b;
+  text-align: center;
+}
+
+.p-section-title__heading {
+  z-index: 1;
+  text-align: center;
+}
+
+.p-section-title__text {
+  line-height: 0.4;
+  letter-spacing: 2px;
+  padding: 0 0 rem(15) 0;
+  color: #ffffff;
+  font-weight: $font-weight-base;
+  font-size: rem(20);
+
+  @include mq(tab) {
+    line-height: 1;
+    padding: 0 0 rem(5) 0;
+    font-size: rem(30);
+  }
+}
+
+.c-section-title__english {
+  color: #706f4b;
+}

@@ -1,0 +1,26 @@
+.c-news-DateCat {
+  display: flex;
+  align-items: flex-start;
+}
+
+.c-news-DateCat__date {
+  margin-right: rem(29);
+  color: #ffffff;
+
+  @include mq() {
+    margin-right: rem(48);
+  }
+}
+
+.c-news-DateCat__category {
+  padding: rem(2) rem(21) rem(2) rem(20);
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  font-size: rem(14);
+
+  white-space: nowrap;
+  @include mq() {
+    padding-bottom: rem(5);
+    margin-right: rem(64);
+  }
+}

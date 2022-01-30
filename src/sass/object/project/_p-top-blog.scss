@@ -1,0 +1,35 @@
+.p-top-blog__cards {
+  margin-top: rem(64);
+}
+
+.p-top-blog__btn {
+  margin-top: rem(23);
+  text-align: center;
+
+  @include mq() {
+    margin-top: rem(48);
+  }
+}
+
+.p-top-blog__item {
+  margin-top: rem(24);
+
+  @include mq() {
+    margin-top: 0;
+  }
+}
+
+.p-top-blog__item:not(:last-child) {
+  @include mq() {
+    margin-right: rem(25);
+  }
+}
+
+.p-top-blog__title-wrap {
+  @include mq() {
+    position: absolute;
+    top: rem(-41);
+    right: 5.5%;
+    z-index: -1;
+  }
+}
