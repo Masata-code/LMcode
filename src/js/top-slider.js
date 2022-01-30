@@ -11,10 +11,10 @@ let swipeOption = {
   },
   speed: 2000,
 };
-new Swiper(".p-mv__container", swipeOption);
+new Swiper(".js-mv", swipeOption);
 
 // 制作実績
-const swiper = new Swiper(".p-top-work__slider", {
+const swiper = new Swiper(".js-top-work-slide", {
   // スライドメニューの表示方法
   direction: "horizontal",
   loop: true,
@@ -25,7 +25,7 @@ const swiper = new Swiper(".p-top-work__slider", {
   speed: 1000,
   // スライドのページネーション表示
   pagination: {
-    el: ".p-top-work__pagination",
+    el: ".js-top-work-pagination",
     clickable: true,
   },
 });

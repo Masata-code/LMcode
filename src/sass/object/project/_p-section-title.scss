@@ -36,6 +36,15 @@
   }
 }
 
-.c-section-title__english {
+.p-section-title__english {
+  display: inline-block;
+  letter-spacing: rem(2);
   color: #706f4b;
+  font-weight: 400;
+  font-size: rem(50);
+
+  font-family: "Noto Serif JP";
+  @include mq(tab) {
+    font-size: rem(110);
+  }
 }

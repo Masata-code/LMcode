@@ -7,9 +7,8 @@
   display: none;
   width: 100%;
   height: 100vh;
-  text-align: center;
-
   background: #111111;
+  text-align: center;
 }
 
 .p-drawer__items {
@@ -21,4 +20,14 @@
   margin-right: rem(-2);
 
   flex-direction: column;
+}
+
+.p-drawer__item-link {
+  display: block;
+  width: 100%;
+  line-height: 1;
+  letter-spacing: 2px;
+  margin-bottom: rem(39);
+  color: $text-color;
+  font-size: rem(16);
 }

@@ -23,3 +23,14 @@
 .p-header.is-open {
   opacity: 1;
 }
+
+.p-header__logo {
+  z-index: 9999;
+  height: rem(30);
+}
+
+.p-header__img {
+  @include mq() {
+    height: rem(35);
+  }
+}

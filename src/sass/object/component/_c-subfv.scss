@@ -1,8 +1,8 @@
-.c-subfv h2 {
+.c-subfv__title {
   letter-spacing: rem(2);
   font-size: rem(30);
 
-  @include mq(tab) {
+  @include mq() {
     font-size: rem(35);
   }
 }

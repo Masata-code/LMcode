@@ -1,12 +1,7 @@
-.l-blog-detail__relation {
-  padding: 0 rem(20);
-  margin-top: rem(120);
+.l-blog {
+  margin-bottom: rem(120);
 
   @include mq() {
-    margin-top: rem(104);
+    margin-bottom: rem(150);
   }
-}
-
-.l-blog-detail__side {
-  padding: 0 rem(20);
 }

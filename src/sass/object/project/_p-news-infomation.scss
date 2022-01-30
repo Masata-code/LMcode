@@ -1,18 +1,20 @@
-.p-news-infomation {
+.p-news-information {
   display: block;
   text-align: left;
-  @include mq(tab){
+
+  @include mq() {
     display: flex;
     align-items: center;
     text-align: left;
   }
 }
-.p-news-information__text{
+.p-news-information__text {
   line-height: 1.4;
 }
-.p-news-information__date{
+.p-news-information__date {
   margin-bottom: rem(16);
-  @include mq(tab){
+
+  @include mq() {
     margin-bottom: rem(0);
   }
 }

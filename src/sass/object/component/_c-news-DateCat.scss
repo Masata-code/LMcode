@@ -1,9 +1,9 @@
-.c-news-DateCat {
+.c-news-datecat {
   display: flex;
   align-items: flex-start;
 }
 
-.c-news-DateCat__date {
+.c-news-datecat__date {
   margin-right: rem(29);
   color: #ffffff;
 
@@ -12,7 +12,7 @@
   }
 }
 
-.c-news-DateCat__category {
+.c-news-datecat__category {
   padding: rem(2) rem(21) rem(2) rem(20);
   border: 1px solid #ffffff;
   color: #ffffff;

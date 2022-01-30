@@ -1,4 +1,4 @@
-.c-footer-nav__item {
+.p-footer-nav__item {
   letter-spacing: 0.05em;
   margin-bottom: rem(5);
   color: #ffffff;
@@ -13,7 +13,7 @@
   }
 }
 
-.c-footer-nav__item:last-child {
+.p-footer-nav__item:last-child {
   @include mq() {
     margin-right: 0;
   }
