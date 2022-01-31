@@ -1,0 +1,29 @@
+.p-search {
+  margin-top: rem(-18);
+  text-align: left;
+
+  @include mq(tab) {
+    padding: 0;
+  }
+}
+.p-search__item {
+  display: inline-block;
+  margin-top: rem(18);
+  margin-right: rem(20);
+  background-color: #111111;
+  color: #ffffff;
+  font-size: rem(16);
+  cursor: pointer;
+
+  @include mq(tab) {
+    padding: rem(3) rem(12);
+  }
+}
+.p-search__item.is-active {
+  padding: rem(2) rem(10);
+  background-color: #ffffff;
+  color: #000000;
+}
+.is-hide {
+  display: none;
+}

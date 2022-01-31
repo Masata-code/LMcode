@@ -36,3 +36,11 @@
     padding: 0;
   }
 }
+
+.p-works__list {
+  margin-top: rem(18);
+
+  @include mq() {
+    margin-top: rem(40);
+  }
+}

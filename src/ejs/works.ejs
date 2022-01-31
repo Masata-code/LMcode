@@ -5,15 +5,15 @@
   <body>
     <%- include('./common/_header') %>
 
-    <section class="l-works sublayer p-works">
+    <section class="l-works p-works">
       <%- include('./parts/_c-subFV', {pageTitle:'制作実績'}) %>
 
       <div class="p-works__wrap">
         <div class="p-works__head">
           <%- include('./parts/_c-breadcrumb-list' ,{breadcrumb:'制作実績'}) %>
-          <%- include('./parts/_c-grouping') %>
+          <%- include('./parts/_p-search') %>
         </div>
-        <%- include('./parts/_p-works-items') %>
+        <%- include('./parts/_p-works-list') %>
       </div>
 
       <div class="p-works__pagenation">

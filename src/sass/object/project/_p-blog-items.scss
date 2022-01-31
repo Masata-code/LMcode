@@ -1,16 +1,6 @@
 .p-blog-items {
-  display: grid;
-  margin: rem(16) auto 0;
-
-  row-gap: rem(24);
-  grid-template-columns: 1fr;
-  @include mq(tab) {
+  @include mq() {
     max-width: rem(1440);
-    margin-top: rem(25.6);
-
-    grid-template-columns: 1fr 1fr 1fr;
-    column-gap: rem(25);
-    row-gap: rem(48);
   }
 }
 

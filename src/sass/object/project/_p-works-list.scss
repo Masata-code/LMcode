@@ -1,12 +1,11 @@
-.p-works-items {
+.p-works-list {
   @include mq() {
     display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 114px;
+    column-gap: 48px;
     width: 100%;
     max-width: rem(1400);
     margin: 0 auto;
-
-    column-gap: 48px;
-    row-gap: 114px;
-    grid-template-columns: 1fr 1fr;
   }
 }
