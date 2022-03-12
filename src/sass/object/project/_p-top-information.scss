@@ -4,6 +4,13 @@
     justify-content: center;
   }
 }
+
+.p-top-information__datecat {
+  display: flex;
+  align-items: flex-start;
+  color: $text-color;
+}
+
 .p-top-information__text {
   line-height: 1.5;
   margin-top: rem(16);
@@ -19,12 +26,13 @@
   }
 }
 
-.p-top-infomrmation__date {
+.p-top-information__date {
   margin-top: rem(3);
   margin-right: rem(32);
 
   @include mq() {
-    margin-top: rem(1);
+    margin-right: rem(49);
+    margin-left: rem(2);
   }
 }
 

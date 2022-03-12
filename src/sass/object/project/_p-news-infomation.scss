@@ -10,6 +10,10 @@
 }
 .p-news-information__text {
   line-height: 1.4;
+
+  @include mq() {
+    margin-top: rem(-1);
+  }
 }
 .p-news-information__date {
   margin-bottom: rem(16);

@@ -1,14 +1,16 @@
 .c-news-datecat {
   display: flex;
   align-items: flex-start;
+  color: $text-color;
 }
 
 .c-news-datecat__date {
-  margin-right: rem(29);
-  color: #ffffff;
+  margin-top: rem(3);
+  margin-right: rem(32);
 
   @include mq() {
-    margin-right: rem(48);
+    margin-right: rem(49);
+    margin-left: rem(2);
   }
 }
 
@@ -20,7 +22,8 @@
 
   white-space: nowrap;
   @include mq() {
-    padding-bottom: rem(5);
-    margin-right: rem(64);
+    padding-top: rem(4);
+    padding-bottom: rem(3);
+    margin-right: rem(61);
   }
 }
