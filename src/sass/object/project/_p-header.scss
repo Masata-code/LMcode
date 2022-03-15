@@ -7,15 +7,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: rem(50);
-  padding: rem(8) 0 0 rem(22);
-  background: #111111;
+  padding: rem(8) 0 0 0;
+  background: $Black;
   opacity: 0.7;
   transition: all 0.4s;
 
   @include mq() {
-    height: rem(53);
-    padding: 0 0 0 rem(33);
+    padding: 0;
     margin-top: rem(-2);
   }
 }
@@ -27,10 +25,16 @@
 .p-header__logo {
   z-index: 9999;
   height: rem(30);
+  margin-left: rem(33);
+  @include mq() {
+    margin-left: rem(33);
+  }
 }
 
 .p-header__img {
+  width: rem(130);
   @include mq() {
     height: rem(35);
+    width: initial;
   }
 }

@@ -12,16 +12,12 @@
 }
 
 .p-top-blog__item {
+  display: flex;
+  flex-direction: column;
   margin-top: rem(24);
 
   @include mq() {
     margin-top: 0;
-  }
-}
-
-.p-top-blog__item:not(:last-child) {
-  @include mq() {
-    margin-right: rem(25);
   }
 }
 

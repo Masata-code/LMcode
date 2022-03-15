@@ -1,6 +1,7 @@
 .p-top-blog-items {
   @include mq() {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    column-gap: rem(25);
   }
 }

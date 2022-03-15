@@ -3,6 +3,7 @@
   display: none;
   min-width: 132px;
   text-align: center;
+  border: 1px solid $Sub-color;
 
   @include mq() {
     display: inline-block;
