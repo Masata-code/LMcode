@@ -3,16 +3,16 @@
 <%- include('./common/_head') %>
 
   <body>
+    <%- include('./common/_loader') %>
     <%- include('./common/_header') %>
-      <section class="l-contact sublayer">
-        <%- include('./parts/_c-subFV', {pageTitle:'お問い合わせ'}) %>
-      </section>
+      <main>
+        <section class="l-contact sublayer">
+          <%- include('./parts/_c-subFV', {pageTitle:'お問い合わせ'}) %>
+        </section>
+        <%- include('./parts/_c-breadcrumb-list' ,{breadcrumb:'お問い合わせ'}) %>
+          <%- include('./parts/_p-contact-form') %>
+      </main>
 
-      <%- include('./parts/_c-breadcrumb-list' ,{breadcrumb:'お問い合わせ'}) %>
-
-
-        <%- include('./parts/_p-contact-form') %>
-        
           <%- include('./common/_footer') %>
           <%- include('./parts/_c-btn-pageTop') %>
 

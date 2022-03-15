@@ -3,23 +3,24 @@
 <%- include('./common/_head') %>
 
   <body>
+    <%- include('./common/_loader') %>
     <%- include('./common/_header') %>
       <% const blogInfo={ date: '2020.07.20' , category: 'カテゴリ' , link: '#' , text: '記事タイトルが入ります。' , textdouble: '記事タイトルが入ります。記事タイトルが入ります。記事タイトルが入ります。記事タイトルが入ります。記事タイトルが入ります。記事タイトルが入ります。' } %>
 
-        <section class="l-news sublayer p-news">
-          <%- include('./parts/_c-subFV', {pageTitle:'お知らせ'}) %>
-
-          <%- include('./parts/_c-breadcrumb-list' ,{breadcrumb:'お知らせ一覧'}) %>
-
-            <div class="p-news__wrap">
-              <% for (var i=0; i < 10; i++) { %>
-                <div class="p-news__item">
-                <%- include('./parts/_p-news-information') %>
-                </div>
-              <% } %>
-              <%- include('./parts/_c-pagination') %>
-            </div>
-        </section>
+        <main>
+          <section class="l-news sublayer p-news">
+            <%- include('./parts/_c-subFV', {pageTitle:'お知らせ'}) %>
+            <%- include('./parts/_c-breadcrumb-list' ,{breadcrumb:'お知らせ一覧'}) %>
+              <div class="p-news__wrap">
+                <% for (var i=0; i < 10; i++) { %>
+                  <div class="p-news__item">
+                  <%- include('./parts/_p-news-information') %>
+                  </div>
+                <% } %>
+                <%- include('./parts/_c-pagination') %>
+              </div>
+          </section>
+        </main>
 
         <%- include('./parts/_p-contact-section') %>
         <%- include('./common/_footer') %>
