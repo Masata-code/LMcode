@@ -3,39 +3,36 @@
   <%- include('./common/_head') %>
 
   <body>
-    <%- include('./common/_header') %>
-
-    <!-- メインビュー -->
-    <%- include('./parts/./project/_p-mv') %>
-
-    <!-- 記事リンク -->
-    <div class="l-top-information">
-      <%- include('./parts/project/_p-top-information') %>
-    </div>
-
-    <!-- 斜線 -->
-    <div class="l-top-oblique-line c-oblique-line"></div>
-
-    <!-- 事業内容 -->
-    <div class="l-top-content">
-      <%- include('./parts/project/_p-top-content') %>
-    </div>
-
-    <!-- 斜線 -->
-    <div class="l-top-oblique-line-reverse c-oblique-line-reverse"></div>
-
-    <!-- 制作実績 -->
-    <div class="l-top-works">
-      <%- include('./parts/project/_p-top-works') %>
-    </div>
-
-    <!-- 企業概要 -->
-    <div class="l-top-overview">
-      <%- include('./parts/project/_p-top-overview') %>
-    </div>
-
-    <!-- ブログ -->
-    <div class="l-top-blog"><%- include('./parts/project/_p-top-blog') %></div>
+    <%- include('./common/_loader') %>
+    <main>
+      <%- include('./common/_header') %>
+      <!-- メインビュー -->
+      <%- include('./parts/./project/_p-mv') %>
+      <!-- 記事リンク -->
+      <div class="l-top-information">
+        <%- include('./parts/project/_p-top-information') %>
+      </div>
+      <!-- 斜線 -->
+      <div class="l-top-oblique-line c-oblique-line"></div>
+      <!-- 事業内容 -->
+      <div class="l-top-content">
+        <%- include('./parts/project/_p-top-content') %>
+      </div>
+      <!-- 斜線 -->
+      <div class="l-top-oblique-line-reverse c-oblique-line-reverse"></div>
+      <!-- 制作実績 -->
+      <div class="l-top-works">
+        <%- include('./parts/project/_p-top-works') %>
+      </div>
+      <!-- 企業概要 -->
+      <div class="l-top-overview">
+        <%- include('./parts/project/_p-top-overview') %>
+      </div>
+      <!-- ブログ -->
+      <div class="l-top-blog">
+        <%- include('./parts/project/_p-top-blog') %>
+      </div>
+    </main>
 
     <!-- お問い合わせ -->
     <div class="l-top-contact p-top-contact">

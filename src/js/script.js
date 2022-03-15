@@ -111,6 +111,25 @@ function search_filter(group) {
   }
 }
 
+// ローダー
+const loader = document.getElementById("js-loader");
+window.addEventListener("load", () => {
+  const ms = 400;
+  loader.style.transition = "opacity " + ms + "ms";
+
+  const loaderOpacity = function () {
+    loader.style.opacity = 0;
+  };
+  const loaderDisplay = function () {
+    loader.style.display = "none";
+  };
+  // setTimeout(loaderOpacity, 1);
+  // setTimeout(loaderDisplay, ms);
+  // デモ用
+  setTimeout(loaderOpacity, 1000);
+  setTimeout(loaderDisplay, 1000 + ms);
+});
+
 // var searchItem = ".search__item"; //絞り込み項目を選択するエリア
 // var listItem = ".p-works__item"; //絞り込み対象のアイテム
 // var hideClass = "is-hide"; //絞り込み対象外の場合に付与されるclass名
